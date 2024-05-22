@@ -153,6 +153,10 @@ end process;
 end hardware;
 ```
 
+RTL:
+
+![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/fbb61bb6-fa7d-439c-9823-784c922d5a27)
+
 For this implementation, the FPGA resource usage is as follows:
 
 ![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/ce008975-c8a8-4fbf-83ed-14c103b53b8d)
@@ -222,6 +226,11 @@ begin
     end process;
 end hardware;
 ```
+
+RTL:
+
+![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/175d6a19-2899-453f-a3c8-0d29918ce77c)
+
 
 For this implementation, the FPGA resource usage is as follows:
 
