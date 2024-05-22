@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/Meu Drive/Faculdade/Projetos de Disp Prog/P4/ModelSim
+Edecod_component
+Z0 w1716382521
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dG:/My Drive/FPGA/decodificador
+Z5 8G:/My Drive/FPGA/decodificador/decod_component.vhd
+Z6 FG:/My Drive/FPGA/decodificador/decod_component.vhd
+l0
+L5
+VXGOj45@j3PC@7FM@?;f9J0
+!s100 6TKI2GHPjU6^Ul0fZhgac1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1716382523
+!i10b 1
+Z9 !s108 1716382523.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/My Drive/FPGA/decodificador/decod_component.vhd|
+Z11 !s107 G:/My Drive/FPGA/decodificador/decod_component.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Ahardware
+R1
+R2
+R3
+Z14 DEx4 work 15 decod_component 0 22 XGOj45@j3PC@7FM@?;f9J0
+l42
+L14
+VKFLTIo73hjDnm1jYlEjb43
+!s100 LA@UKWoXYXScI5A2T9GkT0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edecodificador
+Z15 w1664759830
+R1
+R2
+R3
+Z16 dG:/Meu Drive/FPGA-CHINA/decodificador
+Z17 8G:\Meu Drive\FPGA-CHINA\decodificador\decodificador.vhd
+Z18 FG:\Meu Drive\FPGA-CHINA\decodificador\decodificador.vhd
+l0
+L5
+VYLkVONE_53X_?6LAWSMLD2
+!s100 C`nalnIFUA8]3IKR;Ii2D0
+R7
+32
+Z19 !s110 1664759831
+!i10b 1
+Z20 !s108 1664759831.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:\Meu Drive\FPGA-CHINA\decodificador\decodificador.vhd|
+Z22 !s107 G:\Meu Drive\FPGA-CHINA\decodificador\decodificador.vhd|
+!i113 1
+R12
+R13
+Ahardware
+R1
+R2
+R3
+DEx4 work 13 decodificador 0 22 YLkVONE_53X_?6LAWSMLD2
+l17
+L14
+V5Ga<NhM0S`:Y854d[1P<f1
+!s100 ^O9b=jWS2NzoTZkRR[XTE0
+R7
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Etb_decodificador
+Z23 w1716382402
+R1
+R2
+R3
+R4
+Z24 8G:\My Drive\FPGA\decodificador\tb_decodificador.vhd
+Z25 FG:\My Drive\FPGA\decodificador\tb_decodificador.vhd
+l0
+L5
+VIMmHkSb9T<=NGd:9WO17U3
+!s100 PP<N4m^5AIdb2SHLBY^:n3
+R7
+32
+Z26 !s110 1716382522
+!i10b 1
+Z27 !s108 1716382522.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:\My Drive\FPGA\decodificador\tb_decodificador.vhd|
+Z29 !s107 G:\My Drive\FPGA\decodificador\tb_decodificador.vhd|
+!i113 1
+R12
+R13
+Ahardware
+R1
+R2
+R3
+DEx4 work 16 tb_decodificador 0 22 IMmHkSb9T<=NGd:9WO17U3
+l31
+L8
+VR44XQEJf<>Vj`]W`N=;hL2
+!s100 bYoBOZ4aG9;n]kPInz90P0
+R7
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R12
+R13

@@ -1,0 +1,19 @@
+{G:/My Drive/FPGA/decodificador/tb_decodificador.vhd} {1 {vcom -work work -2002 -explicit -stats=none {G:\My Drive\FPGA\decodificador\tb_decodificador.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_decodificador
+-- Compiling architecture hardware of tb_decodificador
+
+} {} {}} {G:/My Drive/FPGA/decodificador/decod_component.vhd} {1 {vcom -work work -2002 -explicit -stats=none {G:/My Drive/FPGA/decodificador/decod_component.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decod_component
+-- Compiling architecture hardware of decod_component
+
+} {} {}}

@@ -1,0 +1,1 @@
+No primeiro momento, criei coisas que eram redundantes no multiplexador. Vou tentar diminuir ainda mais usando uma tabela LUT4.

@@ -1,0 +1,65 @@
+|decod7
+CLK => decod_component:uut1.clk
+SEL[0] << decod_component:uut1.sel_display[0]
+SEL[1] << decod_component:uut1.sel_display[1]
+SEL[2] << decod_component:uut1.sel_display[2]
+SEL[3] << decod_component:uut1.sel_display[3]
+SEG[0] << decod_component:uut1.segment[0]
+SEG[1] << decod_component:uut1.segment[1]
+SEG[2] << decod_component:uut1.segment[2]
+SEG[3] << decod_component:uut1.segment[3]
+SEG[4] << decod_component:uut1.segment[4]
+SEG[5] << decod_component:uut1.segment[5]
+SEG[6] << decod_component:uut1.segment[6]
+SEG[7] << decod_component:uut1.segment[7]
+
+
+|decod7|decod_component:uut1
+clk => sel_dig[0].CLK
+clk => sel_dig[1].CLK
+clk => psc[0].CLK
+clk => psc[1].CLK
+clk => psc[2].CLK
+clk => psc[3].CLK
+clk => psc[4].CLK
+clk => psc[5].CLK
+clk => psc[6].CLK
+clk => psc[7].CLK
+clk => psc[8].CLK
+clk => psc[9].CLK
+clk => psc[10].CLK
+clk => psc[11].CLK
+clk => psc[12].CLK
+clk => psc[13].CLK
+clk => psc[14].CLK
+clk => psc[15].CLK
+A[0] => Mux7.IN0
+A[1] => Mux6.IN0
+A[2] => Mux5.IN0
+A[3] => Mux4.IN0
+B[0] => Mux7.IN1
+B[1] => Mux6.IN1
+B[2] => Mux5.IN1
+B[3] => Mux4.IN1
+C[0] => Mux7.IN2
+C[1] => Mux6.IN2
+C[2] => Mux5.IN2
+C[3] => Mux4.IN2
+D[0] => Mux7.IN3
+D[1] => Mux6.IN3
+D[2] => Mux5.IN3
+D[3] => Mux4.IN3
+sel_display[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sel_display[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sel_display[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sel_display[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+segment[0] <= <VCC>
+segment[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+segment[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+
+

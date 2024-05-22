@@ -1,0 +1,66 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity tb_decodificador is
+end tb_decodificador;
+
+architecture hardware of tb_decodificador is 
+
+signal clk : std_logic := '0';
+signal sel_display : std_logic_vector(3 downto 0);
+signal segment : std_logic_vector(7 downto 0);
+
+constant dt : time := 25 ns;
+
+component decod_component is
+
+port(
+        clk        : in  std_logic; -- Clock signal
+        A, B, C, D : in  std_logic_vector(3 downto 0); -- Input digits (4-bit each)
+        sel_display: out std_logic_vector(3 downto 0); -- Output to select the display
+        segment    : out std_logic_vector(7 downto 0)  -- Output to drive the 7-segment display
+    );
+end component;
+
+SIGNAL A : std_logic_vector(3 downto 0) := X"1";
+SIGNAL B : std_logic_vector(3 downto 0) := X"9";
+SIGNAL C : std_logic_vector(3 downto 0) := X"8";
+SIGNAL D : std_logic_vector(3 downto 0) := X"7";
+
+begin
+
+process
+begin
+clk <= not clk;
+wait for dt;
+end process;
+
+process(clk)
+variable psc 		: integer range 0 to 12000001;
+variable number 	: integer range 0 to 65536 := 0;
+begin
+	if clk'event and clk = '1' then
+		psc := psc + 1;
+		if psc = 12000001 then
+			psc := 0;
+			number := number + 1;
+			A <= std_logic_vector(to_unsigned(number, 16)(3 downto 0));
+			B <= std_logic_vector(to_unsigned(number, 16)(7 downto 4));
+			C <= std_logic_vector(to_unsigned(number, 16)(11 downto 8));
+			D <= std_logic_vector(to_unsigned(number, 16)(15 downto 12));
+		end if;
+	end if;
+end process;
+
+uut1 : decod_component port map (
+	clk => clk,
+	A => A,
+	B => B,
+	C => C,
+	D => D,
+	sel_display => sel_display,
+	segment => segment
+);
+
+end hardware;

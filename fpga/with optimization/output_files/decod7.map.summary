@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 21 18:20:49 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : decod7
+Top-level Entity Name : decod7
+Family : Cyclone IV E
+Total logic elements : 31
+    Total combinational functions : 31
+    Dedicated logic registers : 18
+Total registers : 18
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

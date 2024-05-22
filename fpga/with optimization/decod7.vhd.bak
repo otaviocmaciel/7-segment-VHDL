@@ -1,0 +1,8 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+entity decod7 is
+end decod7;
+
+architecture hardware of decod7 is
+
+end hardware;

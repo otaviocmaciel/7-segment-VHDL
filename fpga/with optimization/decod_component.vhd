@@ -1,0 +1,74 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity decod_component is
+    port(
+        clk        : in  std_logic; -- Clock signal
+        A, B, C, D : in  std_logic_vector(3 downto 0); -- Input digits (4-bit each)
+        sel_display: out std_logic_vector(3 downto 0); -- Output to select the display
+        segment    : out std_logic_vector(7 downto 0)  -- Output to drive the 7-segment display
+    );
+end decod_component;
+
+architecture hardware of decod_component is
+
+type digit_array is array (0 to 3) of std_logic_vector(3 downto 0); -- Array type to hold 4 digits
+signal digits  : digit_array; -- Signal to hold the input digits
+
+type segmenton_array is array (0 to 15) of std_logic_vector(7 downto 0); -- Array type to hold the 7-segment encoding for 0-F
+constant segmenton : segmenton_array := (
+    "00000011", -- 0
+    "10011111", -- 1
+    "00100101", -- 2
+    "00001101", -- 3
+    "10011001", -- 4
+    "01001001", -- 5
+    "01000001", -- 6
+    "00011111", -- 7
+    "00000001", -- 8
+    "00001001", -- 9
+    "00010001", -- A
+    "11000001", -- B
+    "01100011", -- C
+    "10000101", -- D
+    "01100001", -- E
+    "01110001"  -- F
+); -- Constant array with 7-segment encoding
+
+signal psc     : integer range 0 to 50000 := 0; -- Prescaler for clock division
+signal sel_dig : integer range 0 to 3 := 0; -- Signal to select the current digit
+
+begin
+    -- Assign input digits to the array
+    digits(0) <= A;
+    digits(1) <= B;
+    digits(2) <= C;
+    digits(3) <= D;
+
+    -- Clock process to update the prescaler and digit selector
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            psc <= psc + 1;
+            if psc = 50000 then
+                sel_dig <= sel_dig + 1; -- Increment digit selector
+            end if;
+        end if;
+    end process;
+
+    -- Process to update the selected display and segment values
+    process(sel_dig, digits)
+    begin
+        case sel_dig is
+            when 0 => sel_display <= "0111"; -- Enable first display
+            when 1 => sel_display <= "1011"; -- Enable second display
+            when 2 => sel_display <= "1101"; -- Enable third display
+            when 3 => sel_display <= "1110"; -- Enable fourth display
+            when others => sel_display <= "1111"; -- Default case (disable all)
+        end case;
+
+        -- Set the segment output based on the current digit
+        segment <= segmenton(to_integer(unsigned(digits(sel_dig))));
+    end process;
+end hardware;
