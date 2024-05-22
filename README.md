@@ -25,7 +25,7 @@ The testbench helps to visualize the simulated behavior of the implemented logic
 
 ## Implementation
 
-Initially, the implementation was not well optimized, utilizing a larger number of if statements for segment multiplexing. Below is an example of the first implementation that was clearly suboptimal.
+Initially, the implementation was not well optimized, utilizing a larger number of if statements for display multiplexing. Below is an example of the first implementation that was clearly suboptimal.
 
 Bad Implementation:
 ```
