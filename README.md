@@ -1,7 +1,7 @@
 # 4 digits 7-segment decoder VHDL
 ## Description
 
-The "4 digits 7-segment decoder VHDL" is a VHDL project designed to decode hexadecimal values and display them on 7-segment displays. Unlike a BCD (Binary-Coded Decimal) decoder (7447 for example), which only accepts numbers from 0 to 9, this decoder accepts values from 0 to F in hexadecimal. Thus, it can display numbers from 0000 to FFFF, corresponding to 0 to 65535 in decimal. 
+The "4 digits 7-segment decoder VHDL" is a VHDL project designed to decode hexadecimal values and display them on 7-segment displays. Unlike a BCD (Binary-Coded Decimal) decoder (7447 for example), which only accepts numbers from 0 to 9, this decoder accepts values from 0 to F in hexadecimal. Thus, it can display numbers from 0000 to FFFF.
 
 ## Features
 
