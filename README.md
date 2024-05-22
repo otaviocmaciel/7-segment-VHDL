@@ -154,6 +154,7 @@ end hardware;
 ```
 
 For this implementation, the FPGA resource usage is as follows:
+
 ![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/ce008975-c8a8-4fbf-83ed-14c103b53b8d)
 
 Despite the logic for the implementation being simple, I tried to optimize it as much as possible to reduce the usage of Logic Elements (LEs). Now, here’s a slightly less terrible implementation 😄:
