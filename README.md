@@ -236,4 +236,12 @@ For this implementation, the FPGA resource usage is as follows:
 
 ![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/9846a476-52c7-4334-811d-d2e2f3721708)
 
+## FPGA Development Kit
 
+The Development Kit used have embedded a Cyclone IV - EP4CE6E22C8. This kit have others models with others variants of EP4CEx (6 and 10k LEs).
+
+![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/8b6164a2-3915-4c75-a96b-588303f550d4)
+
+## References
+
+* [EP4CE6 Specifications](https://www.intel.com.br/content/www/br/pt/products/sku/210472/cyclone-iv-ep4ce6-fpga/specifications.html)
