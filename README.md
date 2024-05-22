@@ -234,4 +234,5 @@ RTL:
 
 For this implementation, the FPGA resource usage is as follows:
 
-![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/d5574e7c-9d3a-42f2-9604-ced7a1dfa595)
+![image](https://github.com/otaviocmaciel/7-segment-VHDL/assets/93693421/c4b3e892-0dca-4283-bf2c-7d463b1c8cee)
+
